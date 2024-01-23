@@ -1,0 +1,173 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block index_main %}
+    <!-- begin:main-title -->
+    <div class="main-title block-section padd-40-top padd-60-btm bg-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1 class="main-title-primary">Projects</h1>
+            <h4 class="main-title-secondary">Our awesome buildings and projects.</h4>
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- .main-title -->
+    <!-- end:main-title -->
+
+    <!-- begin:breadcrumb -->
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li class="active">Projects</li>
+            </ol>
+          </div><!-- .col-md-12 -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- .site-breadcrumb -->
+    <!-- end:breadcrumb -->
+
+    <!-- begin:site-main -->
+    <div class="site-main">
+      <!-- begin:content-section -->
+      <div class="content-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="entry-content">
+                <ul class="work-filter">
+                  <li class="active" data-filter="*"><a href="#">All works</a></li>
+                  <li data-filter=".buildings"><a href="#buildings">Buildings</a></li>
+                  <li data-filter=".interior-design"><a href="#interior-design">Interior Design</a></li>
+                  <li data-filter=".isolation"><a href="#isolation">Isolation</a></li>
+                  <li data-filter=".house-renovation"><a href="#house-renovation">House Renovation</a></li>
+                </ul><!-- .work-filter -->
+
+                <ul class="work-grid">
+                  <li class="work-item buildings">
+                    <a href="assets/{% static 'img/img-work-01.jpg' %}" title="Avenue Hotels" class="image-lightbox">
+                      <div class="work-item-image">
+                        <img src="assets/{% static 'img/img-work-01.jpg' %}" alt="Avenue Hotels">
+                      </div><!-- .work-item-image -->
+                      <div class="work-item-info">
+                        <h4 class="work-item-title">Avenue Hotels</h4>
+                        <span class="work-item-desc">Buildings</span>
+                      </div><!-- .work-item-info -->
+                    </a>
+                  </li><!-- .work-item -->
+                  <li class="work-item interior-design">
+                    <a href="assets/{% static 'img/img-work-02.jpg' %}" title="Mark Bedroom" class="image-lightbox">
+                      <div class="work-item-image">
+                        <img src="assets/{% static 'img/img-work-02.jpg' %}" alt="Mark Bedroom">
+                      </div><!-- .work-item-image -->
+                      <div class="work-item-info">
+                        <h4 class="work-item-title">Mark Bedroom</h4>
+                        <span class="work-item-desc">Interior Design</span>
+                      </div><!-- .work-item-info -->
+                    </a>
+                  </li><!-- .work-item -->
+                  <li class="work-item buildings">
+                    <a href="assets/{% static 'img/img-work-03.jpg' %}" title="Edu Hostel" class="image-lightbox">
+                      <div class="work-item-image">
+                        <img src="assets/{% static 'img/img-work-03.jpg' %}" alt="Edu Hostel">
+                      </div><!-- .work-item-image -->
+                      <div class="work-item-info">
+                        <h4 class="work-item-title">Edu Hostel</h4>
+                        <span class="work-item-desc">Buildings</span>
+                      </div><!-- .work-item-info -->
+                    </a>
+                  </li><!-- .work-item -->
+                  <li class="work-item isolation house-renovation">
+                    <a href="assets/{% static 'img/img-work-04.jpg' %}" title="Alan Home" class="image-lightbox">
+                      <div class="work-item-image">
+                        <img src="assets/{% static 'img/img-work-04.jpg' %}" alt="Alan Home">
+                      </div><!-- .work-item-image -->
+                      <div class="work-item-info">
+                        <h4 class="work-item-title">Alan Home</h4>
+                        <span class="work-item-desc">Isolation</span>
+                      </div><!-- .work-item-info -->
+                    </a>
+                  </li><!-- .work-item -->
+                  <li class="work-item interior-design house-renovation">
+                    <a href="assets/{% static 'img/img-work-05.jpg' %}" title="Jannet Home" class="image-lightbox">
+                      <div class="work-item-image">
+                        <img src="assets/{% static 'img/img-work-05.jpg' %}" alt="Jannet Home">
+                      </div><!-- .work-item-image -->
+                      <div class="work-item-info">
+                        <h4 class="work-item-title">Jannet Home</h4>
+                        <span class="work-item-desc">House Renovation</span>
+                      </div><!-- .work-item-info -->
+                    </a>
+                  </li><!-- .work-item -->
+                  <li class="work-item design photography">
+                    <a href="assets/{% static 'img/img-work-06.jpg' %}" title="Papa Ron's Restaurant" class="image-lightbox">
+                      <div class="work-item-image">
+                        <img src="assets/{% static 'img/img-work-06.jpg' %}" alt="Papa Ron's Restaurant">
+                      </div><!-- .work-item-image -->
+                      <div class="work-item-info">
+                        <h4 class="work-item-title">Papa Ron's Restaurant</h4>
+                        <span class="work-item-desc">Interior Design</span>
+                      </div><!-- .work-item-info -->
+                    </a>
+                  </li><!-- .work-item -->
+                </ul><!-- .work-grid -->
+              </div><!-- .entry-content -->
+            </div><!-- .col-## -->
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </div><!-- .content-section -->
+      <!-- end:content-section -->
+    </div><!-- .site-main -->
+    <!-- end:site-main -->
+
+  	<!-- begin:footer -->
+    <footer id="colophon" class="site-footer bg-black" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <section class="widget">
+              <img src="assets/{% static 'img/img-logo-footer.png' %}" alt="bootstrap theme for construction companies" class="img-responsive marg-20-btm marg-20-top">
+              <p>Construction company based on Orange, California. Construction was very sufficient in maintaining the integrity of project in terms of planning, scheduling, cost and quality.</p>
+            </section><!-- .widget -->
+          </div><!-- .col-## -->
+
+          <div class="col-md-2 col-sm-6">
+            <section class="widget">
+              <h3 class="widget-title">Our Company</h3>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Selected Work</a></li>
+                <li><a href="#">Get in touch</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </section><!-- .widget -->
+          </div><!-- .col-## -->
+
+          <div class="col-md-3 col-sm-6">
+            <section class="widget">
+              <h3 class="widget-title">Our Services</h3>
+              <ul>
+                <li><a href="#">Metal Roofting</a></li>
+                <li><a href="#">Green Building</a></li>
+                <li><a href="#">Construction Consultant</a></li>
+                <li><a href="#">Construction Management</a></li>
+                <li><a href="#">General Contracting</a></li>
+              </ul>
+            </section><!-- .widget -->
+          </div><!-- .col-## -->
+
+          <div class="col-md-3 col-sm-6">
+            <section class="widget">
+              <h3 class="widget-title">Our Contact</h3>
+              <p>5252 E Walnut Ave, Orange, California, United States.</p>
+              <p>hello@construction.me<br>+62 (0) 274 441 5005</p>
+            </section>
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </footer><!-- #colophon -->
+    <!-- end:footer -->
+{% endblock %}

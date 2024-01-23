@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="construction is awesome bootstrap responsive construction business theme">
+    <meta name="keywords" content="construction, business, construction business, responsive, parallax, business theme">
+    <meta name="author" content="templateninja">
+    <title>Construction</title> 
+
+    <!-- Bootstrap -->
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:300,500" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/Pe-icon-7-stroke.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.theme.css' %}" rel="stylesheet">
+    <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.min.css' %}">
+
+      <script src="{% static 'plugins/html5shiv.min.js' %}"></script>
+      <script src="{% static 'plugins/respond.min.js' %}"></script>
+    <![endif]-->
+  </head>
+  <body id="home" class="home">
+
+    {% include 'header.html' %}
+
+    {% block index_main %}
+    {% endblock %}
+
+    {% include 'footer.html' %}
+
+    <!-- begin:copyright -->
+    <section id="copyright" class="copyright bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 copy-left">
+             <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a>. All Right Reserved.</p>
+          </div><!-- .col-sm-6 -->
+
+          <div class="col-sm-6 copy-right">
+            <ul class="social-icon">
+              <li><a href="#" target="_blank" class="icon-twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" target="_blank" class="icon-facebook"><i class="fa fa-facebook-square"></i></a></li>
+              <li><a href="#" target="_blank" class="icon-youtube"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="#" target="_blank" class="icon-instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div><!-- .col-sm-6 -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </section><!-- #copyright -->
+    <!-- begin:copyright -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'plugins/jquery.min.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'plugins/parallax.min.js' %}"></script>
+    <script src="{% static 'js/navigation.js' %}"></script>
+    <script src="{% static 'plugins/jquery.easing.js' %}"></script>
+    <script src="{% static 'plugins/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'plugins/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'plugins/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'plugins/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/script.min.js' %}"></script>
+  </body>
+
+</html>
